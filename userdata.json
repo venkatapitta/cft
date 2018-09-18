@@ -358,8 +358,8 @@
 			"sudo yum install -y httpd\n",
 			"sudo systemctl enable httpd\n",
 			"sudo systemctl start httpd\n",
-		"echo hello venkata  > /var/www/html/index.html\n",
-			"setenforce 0"
+			"setenforce 0",
+		"echo hello venkata  > /var/www/html/index.html\n"
 			] ]
     }
 }
@@ -370,7 +370,7 @@
 
 
 
-    "InstanceSecurityGroup" : {
+     "InstanceSecurityGroup" : {
 
       "Type" : "AWS::EC2::SecurityGroup",
 
@@ -406,7 +406,6 @@
     }
 
   },
-
 
 
   "Outputs" : {
