@@ -358,7 +358,9 @@
 
 
 
-    "InstanceSecurityGroup" : {
+   
+
+          "InstanceSecurityGroup" : {
 
       "Type" : "AWS::EC2::SecurityGroup",
 
@@ -374,17 +376,10 @@
 
           "ToPort" : "22",
 
-          "CidrIp" : { "Ref" : "SSHLocation"}}",
-
-          "IpProtocol" : "tcp",
-
-          "FromPort" : "80",
-
-          "ToPort" : "80",
-
           "CidrIp" : { "Ref" : "SSHLocation"}
 
-         }]
+        }, 
+				 { "IpProtocol" : "tcp", "FromPort" : "80", "ToPort" : "80", "CidrIp" : { "Ref" : "SSHLocation"} }, { "IpProtocol" : "tcp", "FromPort" : "443", "ToPort" : "443", "CidrIp" : { "Ref" : "SSHLocation"} }]
 
       }
 
