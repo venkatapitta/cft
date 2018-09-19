@@ -359,7 +359,7 @@
 			"sudo systemctl enable httpd\n",
 			"sudo systemctl start httpd\n",
 			"setenforce 0",
-		"echo hello venkata  > /var/www/html/index.html\n"
+		"echo hello venkat > /var/www/html/index.html\n"
 			] ]
     }
 }
