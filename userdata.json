@@ -386,10 +386,7 @@
 
           "ToPort" : "22",
 
-          "CidrIp" : { "Ref" : "SSHLocation"}}],
-		  
-
-        "SecurityGroupIngress" : [ {
+          "CidrIp" : { "Ref" : "SSHLocation"}},{
 
           "IpProtocol" : "tcp",
 
@@ -400,10 +397,9 @@
           "CidrIp" : { "Ref" : "SSHLocation"}
 
          }]
-
+		   
       }
-
-    }
+     }
 
   },
 
