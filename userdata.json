@@ -358,8 +358,8 @@
 			"sudo yum install -y httpd\n",
 			"sudo systemctl enable httpd\n",
 			"sudo systemctl start httpd\n",
-			"setenforce 0",
-		"echo hello venkat > /var/www/html/index.html\n"
+		"echo hello venkata ramana welcome to  cft > /var/www/html/index.html\n",
+		"setenforce 0"
 			] ]
     }
 }
