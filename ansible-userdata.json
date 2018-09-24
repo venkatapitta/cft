@@ -364,7 +364,8 @@
 
 			"wget https://s3.amazonaws.com/cf-templates-24pbwxk5maig-us-east-1/jdk-8u181-linux-x64.rpm \n",
 
-			"rpm -ivh jdk-8u181-linux-x64.rpm \n"
+			"rpm -ivh jdk-8u181-linux-x64.rpm \n",
+		        "setenforce 0"
 
 			
 
