@@ -355,11 +355,9 @@
     "Fn::Base64" : {
         "Fn::Join" : [ " ", [
             "#!/bin/bash\n",
-			"sudo yum install -y httpd\n",
-			"sudo systemctl enable httpd\n",
-			"sudo systemctl start httpd\n",
-		"echo hello venkataramana welcome AWsCFT> /var/www/html/index.html\n",
-		"setenforce 0"
+			"sudo yum install -y ansible",
+		"sudo yum install -y jdk",
+			"setenforce 0"
 			] ]
     }
 }
