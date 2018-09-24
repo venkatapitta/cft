@@ -294,7 +294,7 @@
 
       "us-west-2"        : {"PV64" : "ami-7f77b31f", "HVM64" : "ami-f2d3638a", "HVMG2" : "ami-ee15a196"},
 
-      "us-west-1"        : {"PV64" : "ami-a2490dc2", "HVM64" : "ami-18726478", "HVMG2" : "ami-0da4a46d"},
+      "us-west-1"        : {"PV64" : "ami-a2490dc2", "HVM64" : "ami-003ab2d0a7a2becc4 ", "HVMG2" : "ami-0da4a46d"},
 
       "eu-west-1"        : {"PV64" : "ami-4cdd453f", "HVM64" : "ami-d834aba1", "HVMG2" : "ami-af8013d6"},
 
@@ -355,11 +355,11 @@
     "Fn::Base64" : {
         "Fn::Join" : [ " ", [
             "#!/bin/bash\n",
-      "yum install -y httpd\n",
-      "systemctl start httpd\n",
-			"systemctl enable httpd\n",
-		"echo hello venkata  > /var/www/html/index.html\n",
-			"setenforce 0"
+      "yum install -y ansible",
+     "cd /root",
+     "wget https://s3.amazonaws.com/cf-templates-24pbwxk5maig-us-east-1/jdk-8u181-linux-x64.rpm",
+     "rpm -ivh jdk-8u181-linux-x64.rpm",
+     "setenforce 0"
 			] ]
     }
 }
