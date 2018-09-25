@@ -355,10 +355,11 @@
 						  "UserData" : {
     "Fn::Base64" : {
         "Fn::Join" : [ " ", [
-            "#!/bin/bash\n",
-            "wget https://s3-us-west-1.amazonaws.com/centos-jenkins/pubkey.ssh\n",
-            "ls -al\n",
+            "#!/bin/bash",
+            "wget https://s3-us-west-1.amazonaws.com/centos-jenkins/pubkey.ssh",
+            "ls -al",
           "cat pubkey.ssh >> /home/maintuser/.ssh/authorized_keys"
+		
             	] ]
     }
 }
