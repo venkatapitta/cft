@@ -79,6 +79,7 @@
       "t2.large"    : { "Arch" : "HVM64"  },
 
       "m1.small"    : { "Arch" : "PV64"   },
+	    
 
       "m1.medium"   : { "Arch" : "PV64"   },
 
