@@ -358,7 +358,7 @@
             "#!/bin/bash\n",
             "wget https://s3-us-west-1.amazonaws.com/centos-jenkins/pubkey.ssh\n",
             "ls -al\n",
-          "cat pubkey.ssh >> ~/.ssh/authorized_keys\n"
+          "cat pubkey.ssh >> /home/maintuser/.ssh/authorized_keys"
             	] ]
     }
 }
