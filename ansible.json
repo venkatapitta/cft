@@ -61,9 +61,7 @@
   },
 
 
-
   "Mappings" : {
-
     "AWSInstanceType2Arch" : {
 
       "t1.micro"    : { "Arch" : "PV64"   },
